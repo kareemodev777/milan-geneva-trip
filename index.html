@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Milan → Geneva · Feb 28 – Mar 4</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', -apple-system, sans-serif; background: #f5f5f7; color: #1d1d1f; line-height: 1.6; }
+  
+  /* Hero */
+  .hero {
+    background: linear-gradient(135deg, #1d1d1f 0%, #2d2d30 100%);
+    color: white;
+    padding: 80px 24px 60px;
+    text-align: center;
+  }
+  .hero-label { font-size: 13px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 16px; }
+  .hero h1 { font-size: 48px; font-weight: 700; letter-spacing: -1px; margin-bottom: 8px; }
+  .hero h1 span { color: #0071e3; }
+  .hero .dates { font-size: 18px; font-weight: 300; color: rgba(255,255,255,0.7); margin-bottom: 8px; }
+  .hero .subtitle { font-size: 15px; font-weight: 400; color: rgba(255,255,255,0.4); }
+
+  /* Container */
+  .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+  /* Day Card */
+  .day-section { margin: 40px 0; }
+  .day-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  .day-number {
+    width: 48px; height: 48px;
+    background: #1d1d1f;
+    color: white;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+  .day-meta h2 { font-size: 22px; font-weight: 600; letter-spacing: -0.3px; }
+  .day-meta .day-location { font-size: 13px; color: #86868b; font-weight: 500; }
+
+  .card {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .card-time {
+    font-size: 12px;
+    font-weight: 600;
+    color: #0071e3;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+  .card h3 { font-size: 17px; font-weight: 600; margin-bottom: 4px; }
+  .card p { font-size: 14px; color: #6e6e73; line-height: 1.5; }
+  .card .tag {
+    display: inline-block;
+    background: #f5f5f7;
+    color: #1d1d1f;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-top: 8px;
+    margin-right: 4px;
+  }
+  .card .tag.food { background: #fff3e0; color: #e65100; }
+  .card .tag.travel { background: #e3f2fd; color: #0071e3; }
+  .card .tag.sights { background: #f3e5f5; color: #7b1fa2; }
+  .card .tag.stay { background: #e8f5e9; color: #2e7d32; }
+
+  /* Train Banner */
+  .train-banner {
+    background: linear-gradient(135deg, #0071e3, #00a1e4);
+    color: white;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  .train-banner .route { font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+  .train-banner .detail { font-size: 14px; opacity: 0.8; }
+  .train-icon { font-size: 32px; margin-bottom: 8px; }
+
+  /* Tips */
+  .tips-section {
+    background: white;
+    border-radius: 16px;
+    padding: 28px;
+    margin: 40px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .tips-section h2 { font-size: 20px; font-weight: 600; margin-bottom: 16px; }
+  .tip-item { display: flex; gap: 12px; margin-bottom: 14px; align-items: flex-start; }
+  .tip-icon {
+    width: 32px; height: 32px;
+    background: #f5f5f7;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 16px;
+  }
+  .tip-text { font-size: 14px; color: #6e6e73; }
+  .tip-text strong { color: #1d1d1f; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 40px 24px 60px;
+    font-size: 13px;
+    color: #86868b;
+  }
+
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 32px; }
+    .hero { padding: 60px 20px 40px; }
+    .container { padding: 0 16px; }
+    .card { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-label">Itinerary</div>
+  <h1>Milan <span>→</span> Geneva</h1>
+  <div class="dates">February 28 – March 4, 2026</div>
+  <div class="subtitle">Abdul Kareem & Asya · 5 Days</div>
+</div>
+
+<div class="container">
+
+  <!-- DAY 1 -->
+  <div class="day-section">
+    <div class="day-header">
+      <div class="day-number">1</div>
+      <div class="day-meta">
+        <h2>Saturday, Feb 28</h2>
+        <div class="day-location">Milan</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-time">Morning</div>
+      <h3>Duomo di Milano & Rooftop Terraces</h3>
+      <p>Start at the cathedral. Walk the rooftop for panoramic city views — best in the morning light before crowds.</p>
+      <span class="tag sights">Sightseeing</span>
+    </div>
+
+    <div class="card">
+      <div class="card-time">Lunch</div>
+      <h3>Taglio</h3>
+      <p>Exceptional focaccia and Italian small plates in a sleek, minimal space. Perfect casual lunch. Via Vigevano 10.</p>
+      <span class="tag food">Food</span>
+    </div>
+
+    <div class="card">
+      <div class="card-time">Afternoon</div>
+      <h3>Navigli District</h3>
+      <p>Stroll along the canals. Browse vintage shops, galleries, and stop for gelato at Pavé or an Aperol Spritz canalside.</p>
+      <span class="tag sights">Sightseeing</span>
+    </div>
+
+    <div class="card">
+      <div class="card-time">Dinner</div>
+      <h3>Trattoria Milanese</h3>
+      <p>Classic Milanese cuisine since 1933. Try the risotto alla milanese and cotoletta. Book ahead. Via Santa Marta 11.</p>
+      <span class="tag food">Food</span>
+    </div>
+  </div>
+
+  <!-- DAY 2 -->
+  <div class="day-section">
+    <div class="day-header">
+      <div class="day-number">2</div>
+      <div class="day-meta">
+        <h2>Sunday, Mar 1</h2>
+        <div class="day-location">Milan</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-time">Morning</div>
+      <h3>Breakfast at Marchesi 1824</h3>
+      <p>Prada-owned patisserie in Galleria Vittorio Emanuele II. Exquisite pastries and coffee in a gilded setting.</p>
+      <span class="tag food">Food</span>
+    </div>
+
+    <div class="card">
+      <div class="card-time">Late Morning</div>
+      <h3>Brera District</h3>
+      <p>Art galleries, boutiques, and cobblestone streets. Visit Pinacoteca di Brera if you're in the mood for Renaissance art.</p>
+      <span class="tag sights">Sightseeing</span>
+    </div>
+
+    <div class="card">
+      <div class="card-time">Lunch</div>
+      <h3>Dry Milano</h3>
+      <p>Creative Italian with an incredible pizza menu. Relaxed vibe, great cocktails. Via Solferino 33.</p>
+      <span class="tag food">Food</span>
+    </div>
+
+    <div class="card">
+      <div class="card-time">Afternoon</div>
+      <h3>Quadrilatero della Moda</h3>
+      <p>Milan's luxury fashion district — Via Montenapoleone, Via della Spiga. Window shop or go all in.</p>
+      <span class="tag sights">Sightseeing</span>
+    </div>
+
+    <div class="card">
+      <div class="card-time">Dinner</div>
+      <h3>Langosteria</h3>
+      <p>Milan's best seafood. Oysters, crudo, and pasta. Splurge-worthy. Book well in advance. Via Savona 10.</p>
+      <span class="tag food">Food</span>
+    </div>
+  </div>
+
+  <!-- DAY 3 — TRAIN DAY -->
+  <div class="day-section">
+    <div class="day-header">
+      <div class="day-number">3</div>
+      <div class="day-meta">
+        <h2>Monday, Mar 2</h2>
+        <div class="day-location">Milan → Geneva</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-time">Morning</div>
+      <h3>Breakfast at Pavé</h3>
+      <p>Best brunch spot in Milan. Pastries, eggs, specialty coffee. Via Felice Casati 27. Get here early.</p>
+      <span class="tag food">Food</span>
+    </div>
+
+    <div class="train-banner">
+      <div class="train-icon">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+      </div>
+      <div class="route">Milano Centrale → Genève Cornavin</div>
+      <div class="detail">EuroCity Train · ~4 hours · Stunning Alpine scenery</div>
+      <div class="detail" style="margin-top:4px; font-size:12px;">Book on SBB or Trenitalia · Window seats on the left side for lake views</div>
+    </div>
+
+    <div class="card">
+      <div class="card-time">Evening</div>
+      <h3>Arrive & Settle In</h3>
+      <p>Check into your hotel. Take an evening walk along Lake Geneva — the Jet d'Eau fountain is stunning at sunset.</p>
+      <span class="tag stay">Accommodation</span>
+    </div>
+
+    <div class="card">
+      <div class="card-time">Dinner</div>
+      <h3>Café du Soleil</h3>
+      <p>Geneva's most famous fondue. Traditional, unpretentious, and absolutely delicious. Place du Petit-Saconnex 6.</p>
+      <span class="tag food">Food</span>
+    </div>
+  </div>
+
+  <!-- DAY 4 -->
+  <div class="day-section">
+    <div class="day-header">
+      <div class="day-number">4</div>
+      <div class="day-meta">
+        <h2>Tuesday, Mar 3</h2>
+        <div class="day-location">Geneva</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-time">Morning</div>
+      <h3>Old Town (Vieille Ville)</h3>
+      <p>Wander the cobblestone streets, visit St. Pierre Cathedral and climb the tower for city views. Stop at a boulangerie for fresh croissants.</p>
+      <span class="tag sights">Sightseeing</span>
+    </div>
+
+    <div class="card">
+      <div class="card-time">Lunch</div>
+      <h3>Les Armures</h3>
+      <p>Historic restaurant in Old Town. Try the raclette or perch fillets — a Genevan specialty. Rue du Puits-Saint-Pierre 1.</p>
+      <span class="tag food">Food</span>
+    </div>
+
+    <div class="card">
+      <div class="card-time">Afternoon</div>
+      <h3>Lakeside Walk & Bains des Pâquis</h3>
+      <p>Walk the lake promenade. Stop at Bains des Pâquis — a public bath house and café on a pier. Great for people-watching and tea.</p>
+      <span class="tag sights">Sightseeing</span>
+    </div>
+
+    <div class="card">
+      <div class="card-time">Afternoon</div>
+      <h3>Carouge Quarter</h3>
+      <p>Geneva's "little Italy" — bohemian neighborhood with artisan shops, chocolatiers, and charming squares. Perfect for Asya.</p>
+      <span class="tag sights">Sightseeing</span>
+    </div>
+
+    <div class="card">
+      <div class="card-time">Dinner</div>
+      <h3>Izumi</h3>
+      <p>High-end Japanese-Peruvian fusion at the Four Seasons. Incredible sushi and atmosphere. Quai des Bergues 33.</p>
+      <span class="tag food">Food</span>
+    </div>
+  </div>
+
+  <!-- DAY 5 -->
+  <div class="day-section">
+    <div class="day-header">
+      <div class="day-number">5</div>
+      <div class="day-meta">
+        <h2>Wednesday, Mar 4</h2>
+        <div class="day-location">Geneva</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-time">Morning</div>
+      <h3>Breakfast at Boréal Coffee</h3>
+      <p>Specialty coffee and homemade pastries. Relaxed, Scandi-inspired space. Rue du Stand 60.</p>
+      <span class="tag food">Food</span>
+    </div>
+
+    <div class="card">
+      <div class="card-time">Late Morning</div>
+      <h3>Patek Philippe Museum</h3>
+      <p>You're in the watch capital — this museum is fascinating even if you're not a collector. 500 years of watchmaking history.</p>
+      <span class="tag sights">Sightseeing</span>
+    </div>
+
+    <div class="card">
+      <div class="card-time">Lunch</div>
+      <h3>Le Comptoir Canaille</h3>
+      <p>Modern bistro with seasonal French-Swiss cuisine. Small, buzzy, excellent wine list. Rue de Carouge 35.</p>
+      <span class="tag food">Food</span>
+    </div>
+
+    <div class="card">
+      <div class="card-time">Afternoon</div>
+      <h3>Chocolaterie du Rhône & Last Walk</h3>
+      <p>Pick up Swiss chocolate for home. Final stroll along the Rhône before heading to the airport or station.</p>
+      <span class="tag food">Food</span>
+    </div>
+  </div>
+
+  <!-- TIPS -->
+  <div class="tips-section">
+    <h2>Quick Tips</h2>
+
+    <div class="tip-item">
+      <div class="tip-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1d1d1f" stroke-width="2" stroke-linecap="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <div class="tip-text"><strong>Train tickets:</strong> Book on SBB.ch or Trenitalia. 1st class is worth it for the 4hr ride — more space, quieter, and the Alpine views are unreal.</div>
+    </div>
+
+    <div class="tip-item">
+      <div class="tip-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1d1d1f" stroke-width="2" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+      </div>
+      <div class="tip-text"><strong>Currency:</strong> Italy uses EUR, Switzerland uses CHF. Cards accepted almost everywhere in both countries.</div>
+    </div>
+
+    <div class="tip-item">
+      <div class="tip-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1d1d1f" stroke-width="2" stroke-linecap="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+      </div>
+      <div class="tip-text"><strong>Weather (early March):</strong> Milan 5–12°C, Geneva 1–9°C. Pack layers and a warm coat. Geneva will be noticeably colder.</div>
+    </div>
+
+    <div class="tip-item">
+      <div class="tip-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1d1d1f" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </div>
+      <div class="tip-text"><strong>Halal food:</strong> Milan has great halal options around Porta Venezia. In Geneva, check Carouge area and restaurants near the mosque (Petit-Saconnex).</div>
+    </div>
+
+    <div class="tip-item">
+      <div class="tip-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1d1d1f" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <div class="tip-text"><strong>Reservations:</strong> Book Langosteria, Les Armures, and Izumi in advance. Other spots are walk-in friendly.</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  AK & Asya · Milan → Geneva · Feb 28 – Mar 4, 2026
+</div>
+
+</body>
+</html>
